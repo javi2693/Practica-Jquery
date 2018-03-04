@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Concesionario Granados</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" href="tema/cgranados/jquery-ui.structure.css">
+    <link rel="stylesheet" href="tema/cgranados/jquery-ui.theme.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="120" height="70" alt="Logo Concesionario">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse header" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            <h2></h2>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link menu" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link menu" href="form.html">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb navbar-light">
+                <li class="breadcrumb-item" aria-current="page">
+                    <a href="index.html">Inicio</a>
+                </li>
+            </ol>
+        </nav>
+        <div class="principal">
+            <div class="text-center">
+                <h3>Concesionario GRANADOS</h3>
+                <br>
+                <br>
+            </div>
+            <div class="text-left">
+                <p>Use nuestro calendario para concertar una cita</p>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <label for="from">Fecha de entrada</label>
+                    <input type="text" id="from" name="from">
+                    <br>
+                    <br>
+                </div>
+                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <label for="from">Fecha de salida</label>
+                    <input type="text" id="to" name="to">
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="toggler">
+                        <div id="effect" class="ui-widget-content ui-corner-all">
+                            <h3 class="ui-widget-header ui-corner-all">Contenido</h3>
+                            <p>
+                                Etiam libero neque, vitae, mi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <select name="effects" id="effectTypes">
+                        <option value="blind">Blind</option>
+                        <option value="bounce">Bounce</option>
+                        <option value="clip">Clip</option>
+                        <option value="drop">Drop</option>
+                        <option value="explode">Explode</option>
+                        <option value="fade">Fade</option>
+                        <option value="fold">Fold</option>
+                        <option value="highlight">Highlight</option>
+                        <option value="puff">Puff</option>
+                        <option value="pulsate">Pulsate</option>
+                        <option value="scale">Scale</option>
+                        <option value="shake">Shake</option>
+                        <option value="size">Size</option>
+                        <option value="slide">Slide</option>
+                    </select>
+                    <button id="button" class="ui-state-default ui-corner-all">Efecto</button>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div id="dialog" title="Descarga de archivo">
+                        <div class="progress-label">Comenzando descarga</div>
+                        <div id="progressbar"></div>
+                    </div>
+                    <button id="downloadButton">Iniciar descarga</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

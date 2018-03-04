@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta Nombre="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Concesionario Granados</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" href="tema/cgranados/jquery-ui.structure.css">
+    <link rel="stylesheet" href="tema/cgranados/jquery-ui.theme.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="120" height="70" alt="Logo Concesionario">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse header" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            <h2></h2>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link menu" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link menu" href="form.html">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb navbar-light">
+                <li class="breadcrumb-item" aria-current="page">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="breadcrumb-item" id="activo" aria-current="page">Formulario</li>
+            </ol>
+        </nav>
+        <div class="principal">
+            <div class="text-center">
+                <h3>Concesionario GRANADOS</h3>
+                <br>
+                <br>
+            </div>
+            <div class="text-center">
+                <p>Use nuestro formulario para registrar su vehiculo</p>
+                <div id="dialog-form" title="Nuevo registro">
+                    <p class="validateTips">Todos los campos son obligatorios.</p>
+                    <form>
+                        <fieldset>
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" Nombre="Nombre" id="Nombre" value="" class="text ui-widget-content ui-corner-all">
+                            <label for="Apellidos">Apellidos</label>
+                            <input type="text" Nombre="Apellidos" id="Apellidos" value="" class="text ui-widget-content ui-corner-all">
+                            <label for="Marca">Marca</label>
+                            <input type="text" Nombre="Marca" id="Marca" value="" class="text ui-widget-content ui-corner-all">
+                            <label for="Modelo">Modelo</label>
+                            <input type="text" Nombre="Modelo" id="Modelo" value="" class="text ui-widget-content ui-corner-all">
+                            <label for="Matricula">Matricula</label>
+                            <input type="text" Nombre="Matricula" id="Matricula" value="" class="text ui-widget-content ui-corner-all">
+
+                            
+                            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                        </fieldset>
+                    </form>
+                </div>
+                <button id="create-user">Formulario</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
